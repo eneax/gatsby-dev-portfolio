@@ -1,8 +1,7 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
+  "name": "gatsby-starter-portfolio-dev",
+  "description": "A simple starter to get your dev portfolio up and running quickly with Gatsby",
+  "version": "1.0.0",
   "author": "Enea Xharja <enea.xharja@gmail.com>",
   "dependencies": {
     "gatsby": "^2.15.36",
@@ -22,7 +21,8 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "pwa"
   ],
   "license": "MIT",
   "scripts": {
@@ -30,14 +30,10 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "serve": "gatsby serve"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/eneax/gatsby-starter-portfolio-dev"
   }
 }

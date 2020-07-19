@@ -4,21 +4,23 @@
   "version": "1.0.0",
   "author": "Enea Xharja <enea.xharja@gmail.com>",
   "dependencies": {
-    "gatsby": "^2.15.36",
-    "gatsby-image": "^2.2.27",
-    "gatsby-plugin-manifest": "^2.2.21",
-    "gatsby-plugin-offline": "^3.0.14",
-    "gatsby-plugin-react-helmet": "^3.1.11",
-    "gatsby-plugin-sharp": "^2.2.29",
-    "gatsby-source-filesystem": "^2.1.31",
-    "gatsby-transformer-sharp": "^2.2.21",
-    "prop-types": "^15.7.2",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-helmet": "^5.2.1"
+    "gatsby": "^2.21.0",
+    "gatsby-image": "^2.4.0",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.3.1",
+    "gatsby-plugin-sharp": "^2.6.0",
+    "gatsby-plugin-sitemap": "^2.4.2",
+    "gatsby-source-filesystem": "^2.3.0",
+    "gatsby-source-strapi": "0.0.12",
+    "gatsby-transformer-sharp": "^2.5.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.0.0",
+    "react-icons": "^3.10.0",
+    "react-markdown": "^4.3.1"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "2.0.5"
   },
   "keywords": [
     "gatsby",
@@ -30,7 +32,8 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",

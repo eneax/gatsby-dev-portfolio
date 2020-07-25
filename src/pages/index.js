@@ -1,5 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const HomePage = () => <h2>HomePage</h2>
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
-export default HomePage
+const HomePage = () => (
+  <Layout>
+    <SEO title="Home" />
+
+    <h2>HomePage</h2>
+  </Layout>
+);
+
+export default HomePage;

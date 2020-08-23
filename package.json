@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-portfolio-dev",
+  "name": "gatsby-dev-portfolio",
   "description": "A simple starter to get your dev portfolio up and running quickly with Gatsby",
   "version": "1.0.0",
   "author": "Enea Xharja <enea.xharja@gmail.com>",
@@ -53,6 +53,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eneax/gatsby-starter-portfolio-dev"
+    "url": "https://github.com/eneax/gatsby-dev-portfolio"
   }
 }

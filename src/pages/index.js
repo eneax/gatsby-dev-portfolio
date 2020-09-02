@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/hero';
 import Services from '../components/services';
+import Jobs from '../components/jobs';
 
 const HomePage = () => (
   <Layout>
@@ -11,6 +12,7 @@ const HomePage = () => (
 
     <Hero />
     <Services />
+    <Jobs />
   </Layout>
 );
 

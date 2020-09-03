@@ -9,7 +9,7 @@ import Services from '../components/services';
 import Jobs from '../components/jobs';
 import Projects from '../components/projects';
 
-export const getProjectsData = graphql`
+export const getFeaturedProjectsData = graphql`
   {
     allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {

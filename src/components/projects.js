@@ -24,7 +24,7 @@ const Projects = ({ title, projects, showLink }) => (
 Projects.propTypes = {
   title: PropTypes.string.isRequired,
   projects: PropTypes.array.isRequired,
-  showLink: PropTypes.bool.isRequired,
+  showLink: PropTypes.bool,
 };
 
 export default Projects;

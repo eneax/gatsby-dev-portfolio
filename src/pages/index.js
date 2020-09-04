@@ -8,6 +8,7 @@ import Hero from '../components/hero';
 import Services from '../components/services';
 import Jobs from '../components/jobs';
 import Projects from '../components/projects';
+import Blogs from '../components/blogs';
 
 export const getFeaturedProjectsData = graphql`
   {
@@ -31,12 +32,31 @@ export const getFeaturedProjectsData = graphql`
         }
       }
     }
+    allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
+      nodes {
+        id
+        title
+        slug
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        category
+        content
+        date(formatString: "MMMM Do, YYYY")
+        desc
+      }
+    }
   }
 `;
 
 const HomePage = ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
   } = data;
 
   return (
@@ -47,6 +67,7 @@ const HomePage = ({ data }) => {
       <Services />
       <Jobs />
       <Projects title="featured projects" projects={projects} showLink />
+      <Blogs title="blogs" blogs={blogs} showLink />
     </Layout>
   );
 };
@@ -54,6 +75,7 @@ const HomePage = ({ data }) => {
 HomePage.propTypes = {
   data: PropTypes.shape({
     allStrapiProjects: PropTypes.object.isRequired,
+    allStrapiBlogs: PropTypes.object.isRequired,
   }).isRequired,
 };
 

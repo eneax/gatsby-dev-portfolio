@@ -67,7 +67,7 @@ const HomePage = ({ data }) => {
       <Services />
       <Jobs />
       <Projects title="featured projects" projects={projects} showLink />
-      <Blogs title="blogs" blogs={blogs} showLink />
+      <Blogs title="recent posts" blogs={blogs} showLink />
     </Layout>
   );
 };

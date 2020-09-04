@@ -24,7 +24,7 @@ const Blogs = ({ title, blogs, showLink }) => (
 Blogs.propTypes = {
   title: PropTypes.string.isRequired,
   blogs: PropTypes.array.isRequired,
-  showLink: PropTypes.string.isRequired,
+  showLink: PropTypes.bool.isRequired,
 };
 
 export default Blogs;

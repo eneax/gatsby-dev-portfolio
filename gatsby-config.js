@@ -33,6 +33,20 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`400`, `700`],
+          },
+          {
+            family: `Open Sans`,
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `http://localhost:1337`,

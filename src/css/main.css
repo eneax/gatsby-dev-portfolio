@@ -1,12 +1,5 @@
 /*
 =============== 
-Fonts
-===============
-*/
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap"); */
-
-/*
-=============== 
 Variables
 ===============
 */
@@ -38,8 +31,8 @@ Variables
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.2rem;
   --radius: 0.25rem;
@@ -442,7 +435,7 @@ Hero
 
 @media screen and (min-width: 992px) {
   .hero::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 65%;
@@ -643,7 +636,7 @@ Projects
   z-index: 1;
 }
 .project-img::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;

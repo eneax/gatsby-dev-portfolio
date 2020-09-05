@@ -23,6 +23,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.11.1",
     "gatsby": "^2.21.0",
     "gatsby-image": "^2.4.0",
     "gatsby-plugin-manifest": "^2.4.18",
@@ -31,6 +32,7 @@
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-sharp": "^2.6.0",
     "gatsby-plugin-sitemap": "^2.4.2",
+    "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.0",
     "gatsby-source-strapi": "0.0.12",
     "gatsby-transformer-sharp": "^2.5.0",
@@ -39,7 +41,8 @@
     "react-dom": "^16.12.0",
     "react-helmet": "^6.0.0",
     "react-icons": "^3.10.0",
-    "react-markdown": "^4.3.1"
+    "react-markdown": "^4.3.1",
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

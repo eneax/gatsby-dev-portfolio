@@ -53,5 +53,6 @@ module.exports = {
         singleTypes: [`about`],
       },
     },
+    `gatsby-plugin-styled-components`,
   ],
 };

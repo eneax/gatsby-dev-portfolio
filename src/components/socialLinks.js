@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import {
   FaFacebookSquare,
   FaLinkedin,
@@ -8,6 +9,7 @@ import {
   FaTwitterSquare,
 } from 'react-icons/fa';
 
+// data
 const icons = [
   {
     id: 1,
@@ -36,16 +38,35 @@ const icons = [
   },
 ];
 
+// styles
+const LinksWrapper = styled.ul`
+  margin-top: 2rem;
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const SocialLink = styled.a.attrs({
+  target: '_blank',
+  rel: 'noopener',
+})`
+  font-size: 1.75rem;
+  color: var(--clr-grey-1);
+  transition: var(--transition);
+
+  &:hover {
+    color: var(--clr-primary-5);
+  }
+`;
+
 const SocialLinks = ({ styleClass }) => (
-  <ul className={`social-links ${styleClass || ''}`}>
+  <LinksWrapper className={`${styleClass || ''}`}>
     {icons.map(({ id, url, icon }) => (
       <li key={id}>
-        <a href={url} className="social-link" target="_blank" rel="noreferrer">
-          {icon}
-        </a>
+        <SocialLink href={url}>{icon}</SocialLink>
       </li>
     ))}
-  </ul>
+  </LinksWrapper>
 );
 
 SocialLinks.propTypes = {

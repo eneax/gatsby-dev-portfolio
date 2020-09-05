@@ -1,11 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Blogs from '../components/blogs';
 
+// styles
+const BlogPageSection = styled.section`
+  .blog {
+    background: var(--clr-white);
+  }
+`;
+
+// query
 export const getBlogsData = graphql`
   {
     allStrapiBlogs {
@@ -36,9 +45,10 @@ const BlogPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <section className="blog-page">
+
+      <BlogPageSection className="blog-page">
         <Blogs blogs={blogs} title="blog" />
-      </section>
+      </BlogPageSection>
     </Layout>
   );
 };

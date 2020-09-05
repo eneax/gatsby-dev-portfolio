@@ -1,11 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Dev Portfolio',
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `A simple starter to get your dev portfolio up and running quickly with Gatsby`,
     author: `@eneax`,
-    twitterUsername: '@eneaxharja',
-    image: '/twitter-img.png',
-    siteUrl: 'http://localhost:9000',
+    siteUrl: 'https://gatsby-dev-portfolio.netlify.app',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,12 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 import Title from './title';
 import Blog from './blog';
 
+// styled
+const BlogsSection = styled.section`
+  @media screen and (min-width: 576px) {
+    .blogs-center {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+      column-gap: 2rem;
+    }
+  }
+`;
+
 const Blogs = ({ title, blogs, showLink }) => (
-  <section className="section">
+  <BlogsSection className="section">
     <Title title={title} />
     <div className="section-center blogs-center">
       {blogs.map(blog => (
@@ -18,7 +30,7 @@ const Blogs = ({ title, blogs, showLink }) => (
         blog
       </Link>
     )}
-  </section>
+  </BlogsSection>
 );
 
 Blogs.propTypes = {

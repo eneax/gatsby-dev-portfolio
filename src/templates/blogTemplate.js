@@ -2,10 +2,56 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, Link } from 'gatsby';
 import ReactMarkdown from 'react-markdown';
+import styled from 'styled-components';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
+// styles
+const BlogTemplateSection = styled.section`
+  padding: 5rem 0;
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 2rem;
+    display: inline-block;
+
+    li {
+      background: var(--clr-grey-9);
+      color: var(--clr-grey-5);
+      padding: 0.5rem 1rem;
+      margin: 1rem 0;
+      text-transform: uppercase;
+    }
+  }
+
+  blockquote {
+    background: var(--clr-primary-9);
+    border-radius: var(--radius);
+    padding: 1rem;
+    line-height: 2;
+    color: var(--clr-primary-5);
+    margin: 2rem 0;
+  }
+  pre {
+    background: #222;
+    color: yellow;
+    overflow-x: scroll;
+    padding: 1rem 1.5rem;
+    border-radius: var(--radius);
+  }
+  img {
+    width: 15rem;
+    height: 15rem;
+    margin: 3rem 0;
+  }
+`;
+
+// query
 export const query = graphql`
   query getSingleBlogPost($slug: String) {
     blog: strapiBlogs(slug: { eq: $slug }) {
@@ -22,7 +68,8 @@ const BlogTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} description={desc} />
-      <section className="blog-template">
+
+      <BlogTemplateSection>
         <div className="section-center">
           <article className="blog-content">
             <ReactMarkdown source={content} />
@@ -31,7 +78,7 @@ const BlogTemplate = ({ data }) => {
             View all posts
           </Link>
         </div>
-      </section>
+      </BlogTemplateSection>
     </Layout>
   );
 };

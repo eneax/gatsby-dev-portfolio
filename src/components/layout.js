@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import GlobalStyle from './globalStyle';
 import Navbar from './navbar';
 import Sidebar from './sidebar';
 import Footer from './footer';
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <GlobalStyle />
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <main>{children}</main>

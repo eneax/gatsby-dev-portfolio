@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Projects from '../components/projects';
 
-export const getProjectsData = graphql`
+const getProjectsData = graphql`
   {
     allStrapiProjects {
       nodes {
@@ -31,10 +30,11 @@ export const getProjectsData = graphql`
   }
 `;
 
-const ProjectsPage = ({ data }) => {
+const ProjectsPage = () => {
+  const response = useStaticQuery(getProjectsData);
   const {
     allStrapiProjects: { nodes: projects },
-  } = data;
+  } = response;
 
   return (
     <Layout>
@@ -45,12 +45,6 @@ const ProjectsPage = ({ data }) => {
       </section>
     </Layout>
   );
-};
-
-ProjectsPage.propTypes = {
-  data: PropTypes.shape({
-    allStrapiProjects: PropTypes.object.isRequired,
-  }).isRequired,
 };
 
 export default ProjectsPage;

@@ -48,15 +48,15 @@ const ServiceArticle = styled.article`
   }
 
   &:hover {
-    background: var(--clr-primary-5);
-    color: var(--clr-primary-9);
+    background: var(--clr-primary-3);
+    color: var(--clr-primary-5);
 
     p {
-      color: var(--clr-primary-9);
+      color: var(--clr-primary-5);
     }
 
     .underline {
-      background: var(--clr-primary-9);
+      background: var(--clr-primary-5);
     }
   }
 `;

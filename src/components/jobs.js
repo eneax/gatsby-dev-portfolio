@@ -33,14 +33,14 @@ const JobsSection = styled.section`
     line-height: 1;
 
     &:hover {
-      color: var(--clr-primary-5);
-      box-shadow: 0 2px var(--clr-primary-5);
+      color: var(--clr-primary-3);
+      box-shadow: 0 2px var(--clr-primary-3);
     }
   }
 
   .active-btn {
-    color: var(--clr-primary-5);
-    box-shadow: 0 2px var(--clr-primary-5);
+    color: var(--clr-primary-3);
+    box-shadow: 0 2px var(--clr-primary-3);
   }
 
   @media screen and (min-width: 992px) {
@@ -60,12 +60,12 @@ const JobsSection = styled.section`
       margin-bottom: 1rem;
 
       &:hover {
-        box-shadow: -2px 0 var(--clr-primary-5);
+        box-shadow: -2px 0 var(--clr-primary-3);
       }
     }
 
     .active-btn {
-      box-shadow: -2px 0 var(--clr-primary-5);
+      box-shadow: -2px 0 var(--clr-primary-3);
     }
   }
 `;
@@ -77,8 +77,8 @@ const JobInfo = styled.div`
 
   h4 {
     text-transform: uppercase;
-    color: var(--clr-grey-5);
-    background: var(--clr-grey-9);
+    color: var(--clr-secondary-4);
+    background: var(--clr-secondary-5);
     display: inline-block;
     padding: 0.375rem 0.75rem;
     border-radius: var(--radius);
@@ -96,12 +96,12 @@ const JobInfo = styled.div`
     margin-bottom: 1.25rem;
 
     .job-icon {
-      color: var(--clr-primary-5);
+      color: var(--clr-primary-3);
     }
 
     p {
       margin-bottom: 0;
-      color: var(--clr-grey-3);
+      color: var(--clr-secondary-2);
     }
   }
 `;

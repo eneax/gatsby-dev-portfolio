@@ -17,7 +17,7 @@ const FooterWrapper = styled.footer`
     text-transform: uppercase;
 
     span {
-      color: var(--clr-primary-5);
+      color: var(--clr-primary-3);
     }
   }
 
@@ -29,7 +29,7 @@ const FooterWrapper = styled.footer`
     color: var(--clr-white);
 
     &:hover {
-      color: var(--clr-primary-5);
+      color: var(--clr-primary-3);
     }
   }
 `;

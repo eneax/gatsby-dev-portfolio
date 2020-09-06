@@ -51,11 +51,11 @@ const SocialLink = styled.a.attrs({
   rel: 'noopener',
 })`
   font-size: 1.75rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-secondary-1);
   transition: var(--transition);
 
   &:hover {
-    color: var(--clr-primary-5);
+    color: var(--clr-primary-3);
   }
 `;
 

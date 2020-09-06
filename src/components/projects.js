@@ -9,7 +9,7 @@ import Project from './project';
 // styles
 const ProjectsSection = styled.section`
   .projects {
-    background: var(--clr-grey-10);
+    background: var(--clr-secondary-6);
   }
 `;
 

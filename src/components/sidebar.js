@@ -37,7 +37,7 @@ const slideUp = keyframes`
 `;
 
 const SidebarSection = styled.aside`
-  background: var(--clr-grey-10);
+  background: var(--clr-secondary-6);
   position: fixed;
   top: 0;
   left: 0;
@@ -78,7 +78,7 @@ const SidebarSection = styled.aside`
         display: block;
         text-align: center;
         text-transform: capitalize;
-        color: var(--clr-grey-5);
+        color: var(--clr-secondary-4);
         letter-spacing: var(--spacing);
         margin-bottom: 0.5rem;
         font-size: 2rem;
@@ -86,8 +86,8 @@ const SidebarSection = styled.aside`
         border-radius: var(--radius);
 
         &:hover {
-          background: var(--clr-primary-9);
-          color: var(--clr-primary-5);
+          background: var(--clr-primary-5);
+          color: var(--clr-primary-3);
         }
       }
     }
@@ -124,7 +124,7 @@ const CloseBtn = styled.button`
   font-size: 2.5rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-red-dark);
+  color: var(--clr-danger-1);
   cursor: pointer;
 
   @media screen and (min-width: 992px) {

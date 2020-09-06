@@ -8,7 +8,7 @@ import styled from 'styled-components';
 const BlogSection = styled(Link)`
   display: block;
   margin-bottom: 2rem;
-  background: var(--clr-grey-10);
+  background: var(--clr-secondary-6);
   border-radius: var(--radius);
   box-shadow: var(--light-shadow);
   transition: var(--transition);
@@ -36,7 +36,7 @@ const BlogSection = styled(Link)`
     padding: 1.5rem 1rem;
 
     h4 {
-      color: var(--clr-grey-1);
+      color: var(--clr-secondary-1);
     }
   }
 
@@ -48,12 +48,12 @@ const BlogSection = styled(Link)`
     p {
       margin-bottom: 0;
       font-weight: bold;
-      color: var(--clr-grey-5);
+      color: var(--clr-secondary-4);
 
       &:first-of-type {
         display: inline-block;
-        background: var(--clr-grey-9);
-        color: var(--clr-grey-5);
+        background: var(--clr-secondary-5);
+        color: var(--clr-secondary-4);
         margin-right: 0.5rem;
         padding: 0.25rem 0.5rem;
         border-radius: var(--radius);

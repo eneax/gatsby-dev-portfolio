@@ -25,7 +25,7 @@ const ContactSection = styled.section`
 
     h3 {
       padding-top: 1.25rem;
-      color: var(--clr-grey-5);
+      color: var(--clr-secondary-4);
     }
   }
 
@@ -39,14 +39,14 @@ const ContactSection = styled.section`
     padding: 0.75rem 1rem;
     border: none;
     margin-bottom: 1.25rem;
-    background: var(--clr-grey-10);
+    background: var(--clr-secondary-6);
     border-radius: var(--radius);
     text-transform: uppercase;
     letter-spacing: var(--spacing);
 
     &:placeholder {
       font-family: var(--ff-primary);
-      color: var(--clr-grey-1);
+      color: var(--clr-secondary-1);
       text-transform: uppercase;
       letter-spacing: var(--spacing);
     }

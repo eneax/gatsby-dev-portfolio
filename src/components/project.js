@@ -28,7 +28,7 @@ const ProjectArticle = styled.article`
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
+      background: linear-gradient(to bottom right, var(--clr-primary-3), #222);
       opacity: 0.85;
       transition: var(--transition);
     }
@@ -43,7 +43,7 @@ const ProjectArticle = styled.article`
     .project-number {
       display: inline-block;
       font-size: 1.25rem;
-      color: var(--clr-primary-5);
+      color: var(--clr-primary-3);
       margin-bottom: 0.75rem;
     }
 
@@ -55,7 +55,7 @@ const ProjectArticle = styled.article`
 
     .project-desc {
       word-spacing: 15px;
-      color: var(--clr-grey-3);
+      color: var(--clr-secondary-2);
     }
 
     .project-stack {
@@ -63,8 +63,8 @@ const ProjectArticle = styled.article`
 
       span {
         display: inline-block;
-        background: var(--clr-grey-9);
-        color: var(--clr-grey-5);
+        background: var(--clr-secondary-5);
+        color: var(--clr-secondary-4);
         margin-right: 0.5rem;
         padding: 0.25rem 0.5rem;
         border-radius: var(--radius);
@@ -75,7 +75,7 @@ const ProjectArticle = styled.article`
     }
 
     .project-icon {
-      color: var(--clr-primary-5);
+      color: var(--clr-primary-3);
       font-size: 1.25rem;
       margin-right: 0.5rem;
       transition: var(--transition);

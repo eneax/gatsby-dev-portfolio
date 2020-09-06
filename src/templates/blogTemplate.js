@@ -21,8 +21,8 @@ const BlogTemplateSection = styled.section`
     display: inline-block;
 
     li {
-      background: var(--clr-grey-9);
-      color: var(--clr-grey-5);
+      background: var(--clr-secondary-5);
+      color: var(--clr-secondary-4);
       padding: 0.5rem 1rem;
       margin: 1rem 0;
       text-transform: uppercase;
@@ -30,11 +30,11 @@ const BlogTemplateSection = styled.section`
   }
 
   blockquote {
-    background: var(--clr-primary-9);
+    background: var(--clr-primary-5);
     border-radius: var(--radius);
     padding: 1rem;
     line-height: 2;
-    color: var(--clr-primary-5);
+    color: var(--clr-primary-3);
     margin: 2rem 0;
   }
   pre {

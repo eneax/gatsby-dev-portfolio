@@ -2,34 +2,29 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    /* dark shades of primary color*/
-    /* --clr-primary-1: hsl(43, 86%, 17%); */
+    /* primary color */
     --clr-primary-1: hsl(184, 91%, 17%);
     --clr-primary-2: hsl(185, 84%, 25%);
-    --clr-primary-3: hsl(185, 81%, 29%);
-    --clr-primary-4: hsl(184, 77%, 34%);
-    --clr-primary-5: #2caeba;
-    /* lighter shades of primary color */
-    --clr-primary-6: hsl(185, 57%, 50%);
-    --clr-primary-7: hsl(184, 65%, 59%);
-    --clr-primary-8: hsl(184, 80%, 74%);
-    --clr-primary-9: hsl(185, 94%, 87%);
-    --clr-primary-10: hsl(186, 100%, 94%);
-    /* darkest grey - used for headings */
-    --clr-grey-1: hsl(209, 61%, 16%);
-    --clr-grey-3: hsl(209, 34%, 30%);
-    --clr-grey-4: hsl(209, 28%, 39%);
-    /* grey used for paragraphs */
-    --clr-grey-5: hsl(210, 22%, 49%);
-    --clr-grey-8: hsl(210, 31%, 80%);
-    --clr-grey-9: hsl(212, 33%, 89%);
-    --clr-grey-10: hsl(210, 36%, 96%);
-    --clr-green-dark: hsl(125, 67%, 35%);
-    --clr-red-dark: hsl(360, 67%, 44%);
-    --clr-red-light: hsl(360, 71%, 66%);
+    --clr-primary-3: #2caeba;
+    --clr-primary-4: hsl(184, 80%, 74%);
+    --clr-primary-5: hsl(185, 94%, 87%);
+    --clr-primary-6: hsl(186, 100%, 94%);
+    /* secondary color */
+    --clr-secondary-1: hsl(209, 61%, 16%);
+    --clr-secondary-2: hsl(209, 34%, 30%);
+    --clr-secondary-3: hsl(209, 28%, 39%);
+    --clr-secondary-4: hsl(210, 22%, 49%);
+    --clr-secondary-5: hsl(212, 33%, 89%);
+    --clr-secondary-6: hsl(210, 36%, 96%);
+    /* extra colors */
+    --clr-success: hsl(125, 67%, 35%);
+    --clr-danger-1: hsl(360, 67%, 44%);
+    --clr-danger-2: hsl(360, 71%, 66%);
     --clr-white: #fff;
+    /* fonts */
     --ff-primary: 'Roboto', sans-serif;
     --ff-secondary: 'Open Sans', sans-serif;
+    /* constant variables */
     --transition: all 0.3s linear;
     --spacing: 0.2rem;
     --radius: 0.25rem;
@@ -49,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: var(--ff-secondary);
     background: var(--clr-white);
-    color: var(--clr-grey-1);
+    color: var(--clr-secondary-1);
     line-height: 1.5;
     font-size: 0.875rem;
     margin-top: 5rem;
@@ -85,7 +80,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     margin-bottom: 1.25rem;
-    color: var(--clr-grey-3);
+    color: var(--clr-secondary-2);
   }
   @media screen and (min-width: 800px) {
     h1 {
@@ -113,8 +108,8 @@ const GlobalStyle = createGlobalStyle`
 
   .btn {
     text-transform: uppercase;
-    background: var(--clr-primary-5);
-    color: var(--clr-primary-9);
+    background: var(--clr-primary-3);
+    color: var(--clr-primary-5);
     padding: 0.375rem 0.75rem;
     letter-spacing: var(--spacing);
     display: inline-block;
@@ -129,7 +124,7 @@ const GlobalStyle = createGlobalStyle`
   }
   .btn:hover {
     color: var(--clr-primary-1);
-    background: var(--clr-primary-8);
+    background: var(--clr-primary-4);
   }
   .center-btn {
     display: block;
@@ -158,7 +153,7 @@ const GlobalStyle = createGlobalStyle`
     width: 5rem;
     height: 0.25rem;
     margin-bottom: 1.25rem;
-    background: var(--clr-primary-5);
+    background: var(--clr-primary-3);
     margin-left: auto;
     margin-right: auto;
   }
@@ -167,7 +162,7 @@ const GlobalStyle = createGlobalStyle`
     text-align: center;
   }
   .bg-grey {
-    background: var(--clr-grey-10);
+    background: var(--clr-secondary-6);
   }
 
   /* pages */
@@ -177,7 +172,7 @@ const GlobalStyle = createGlobalStyle`
   .error-page,
   .about-page,
   .contact-page {
-    background: var(--clr-grey-10);
+    background: var(--clr-secondary-6);
     min-height: calc(100vh - 5rem - 9rem);
   }
 `;

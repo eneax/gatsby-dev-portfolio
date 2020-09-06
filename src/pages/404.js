@@ -9,7 +9,7 @@ import SEO from '../components/seo';
 const ErrorPageSection = styled.main`
   display: grid;
   place-items: center;
-  background: var(--clr-primary-10);
+  background: var(--clr-primary-6);
   text-align: center;
 
   h1 {

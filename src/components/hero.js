@@ -10,7 +10,7 @@ const HeaderHero = styled.header`
   margin-top: -5rem;
   padding-top: 5rem;
   height: 100vh;
-  background: var(--clr-primary-10);
+  background: var(--clr-primary-6);
   position: relative;
 
   .hero-center {
@@ -20,10 +20,10 @@ const HeaderHero = styled.header`
   }
 
   .hero-info {
-    background: var(--clr-primary-10);
+    background: var(--clr-primary-6);
 
     h4 {
-      color: var(--clr-grey-5);
+      color: var(--clr-secondary-4);
     }
   }
 

@@ -44,12 +44,12 @@ const AboutSection = styled.section`
       display: flex;
       align-items: center;
       letter-spacing: 1px;
-      color: var(--clr-grey-4);
+      color: var(--clr-secondary-3);
     }
   }
 
   .stack-icon {
-    color: var(--clr-primary-5);
+    color: var(--clr-primary-3);
     margin-right: 0.25rem;
     font-size: 1rem;
   }
@@ -57,8 +57,8 @@ const AboutSection = styled.section`
   .about-stack {
     span {
       display: inline-block;
-      background: var(--clr-grey-9);
-      color: var(--clr-grey-5);
+      background: var(--clr-secondary-5);
+      color: var(--clr-secondary-4);
       margin-top: 0.5rem;
       margin-right: 0.5rem;
       padding: 0.25rem 0.5rem;

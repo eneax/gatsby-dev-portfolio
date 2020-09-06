@@ -50,15 +50,15 @@ const NavWrapper = styled.nav`
 
       a {
         text-transform: capitalize;
-        color: var(--clr-grey-1);
+        color: var(--clr-secondary-1);
         font-weight: bold;
         letter-spacing: var(--spacing);
         transition: var(--transition);
         padding: 0.5rem 0;
 
         &:hover {
-          color: var(--clr-primary-5);
-          box-shadow: 0px 2px var(--clr-primary-5);
+          color: var(--clr-primary-3);
+          box-shadow: 0px 2px var(--clr-primary-3);
         }
       }
     }
@@ -75,7 +75,7 @@ const ToggleBtn = styled.button`
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-3);
   cursor: pointer;
   transition: var(--transition);
 
@@ -93,7 +93,7 @@ const Navbar = ({ toggleSidebar }) => (
     <div className="nav-center">
       <div className="nav-header">
         <Link to="/">
-          <img src={logo} alt="Logo" />
+          <img src={logo} width={40} height={40} alt="Logo" />
         </Link>
         <ToggleBtn onClick={toggleSidebar}>
           <FaAlignRight />

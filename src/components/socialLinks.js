@@ -51,7 +51,7 @@ const SocialLink = styled.a.attrs({
   rel: 'noopener',
 })`
   font-size: 1.75rem;
-  color: var(--clr-white);
+  color: var(--clr-grey-1);
   transition: var(--transition);
 
   &:hover {
@@ -63,7 +63,9 @@ const SocialLinks = ({ styleClass }) => (
   <LinksWrapper className={`${styleClass || ''}`}>
     {icons.map(({ id, url, icon }) => (
       <li key={id}>
-        <SocialLink href={url}>{icon}</SocialLink>
+        <SocialLink href={url} className="social-link">
+          {icon}
+        </SocialLink>
       </li>
     ))}
   </LinksWrapper>

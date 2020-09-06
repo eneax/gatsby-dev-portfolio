@@ -24,14 +24,6 @@ const FooterWrapper = styled.footer`
   .footer-links {
     margin: 0 auto 1rem auto;
   }
-
-  .social-link {
-    color: var(--clr-white);
-
-    &:hover {
-      color: var(--clr-primary-5);
-    }
-  }
 `;
 
 const Footer = () => (

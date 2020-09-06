@@ -51,7 +51,7 @@ const SocialLink = styled.a.attrs({
   rel: 'noopener',
 })`
   font-size: 1.75rem;
-  color: var(--clr-grey-1);
+  color: var(--clr-white);
   transition: var(--transition);
 
   &:hover {

@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
 import Layout from '../components/layout';
@@ -15,7 +14,7 @@ const BlogPageSection = styled.section`
 `;
 
 // query
-export const getBlogsData = graphql`
+const getBlogsData = graphql`
   {
     allStrapiBlogs {
       nodes {
@@ -37,10 +36,11 @@ export const getBlogsData = graphql`
   }
 `;
 
-const BlogPage = ({ data }) => {
+const BlogPage = () => {
+  const response = useStaticQuery(getBlogsData);
   const {
     allStrapiBlogs: { nodes: blogs },
-  } = data;
+  } = response;
 
   return (
     <Layout>
@@ -51,12 +51,6 @@ const BlogPage = ({ data }) => {
       </BlogPageSection>
     </Layout>
   );
-};
-
-BlogPage.propTypes = {
-  data: PropTypes.shape({
-    allStrapiBlogs: PropTypes.object.isRequired,
-  }).isRequired,
 };
 
 export default BlogPage;

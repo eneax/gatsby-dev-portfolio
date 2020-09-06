@@ -29,6 +29,7 @@ const ServiceArticle = styled.article`
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 
   .service-icon {
     font-size: 2rem;
@@ -48,15 +49,15 @@ const ServiceArticle = styled.article`
   }
 
   &:hover {
-    background: var(--clr-primary-3);
-    color: var(--clr-primary-5);
+    background: var(--clr-primary-5);
+    color: var(--clr-dark);
 
     p {
-      color: var(--clr-primary-5);
+      color: var(--clr-dark);
     }
 
     .underline {
-      background: var(--clr-primary-5);
+      background: var(--clr-info-1);
     }
   }
 `;
@@ -84,7 +85,7 @@ const servicesList = [
 ];
 
 const Services = () => (
-  <ServiceWrapper className="section bg-grey">
+  <ServiceWrapper className="section bg-primary">
     <Title title="services" />
 
     <div className="section-center services-center">

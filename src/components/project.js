@@ -28,7 +28,11 @@ const ProjectArticle = styled.article`
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(to bottom right, var(--clr-primary-3), #222);
+      background: linear-gradient(
+        to bottom right,
+        var(--clr-primary-3),
+        var(--clr-dark)
+      );
       opacity: 0.85;
       transition: var(--transition);
     }
@@ -55,7 +59,7 @@ const ProjectArticle = styled.article`
 
     .project-desc {
       word-spacing: 15px;
-      color: var(--clr-secondary-2);
+      color: var(--clr-dark);
     }
 
     .project-stack {
@@ -64,7 +68,7 @@ const ProjectArticle = styled.article`
       span {
         display: inline-block;
         background: var(--clr-secondary-5);
-        color: var(--clr-secondary-4);
+        color: var(--clr-dark);
         margin-right: 0.5rem;
         padding: 0.25rem 0.5rem;
         border-radius: var(--radius);
@@ -75,13 +79,13 @@ const ProjectArticle = styled.article`
     }
 
     .project-icon {
-      color: var(--clr-primary-3);
+      color: var(--clr-dark);
       font-size: 1.25rem;
       margin-right: 0.5rem;
       transition: var(--transition);
 
       &:hover {
-        color: var(--clr-primary-1);
+        color: var(--clr-primary-3);
       }
     }
   }

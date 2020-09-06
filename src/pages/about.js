@@ -58,7 +58,7 @@ const AboutSection = styled.section`
     span {
       display: inline-block;
       background: var(--clr-secondary-5);
-      color: var(--clr-secondary-4);
+      color: var(--clr-dark);
       margin-top: 0.5rem;
       margin-right: 0.5rem;
       padding: 0.25rem 0.5rem;

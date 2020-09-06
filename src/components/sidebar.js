@@ -78,7 +78,7 @@ const SidebarSection = styled.aside`
         display: block;
         text-align: center;
         text-transform: capitalize;
-        color: var(--clr-secondary-4);
+        color: var(--clr-dark);
         letter-spacing: var(--spacing);
         margin-bottom: 0.5rem;
         font-size: 2rem;

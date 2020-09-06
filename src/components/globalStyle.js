@@ -3,24 +3,26 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   :root {
     /* primary color */
-    --clr-primary-1: hsl(184, 91%, 17%);
-    --clr-primary-2: hsl(185, 84%, 25%);
-    --clr-primary-3: #2caeba;
-    --clr-primary-4: hsl(184, 80%, 74%);
-    --clr-primary-5: hsl(185, 94%, 87%);
-    --clr-primary-6: hsl(186, 100%, 94%);
+    --clr-primary-1: hsl(195, 38%, 28%);
+    --clr-primary-2: hsl(195, 39%, 40%);
+    --clr-primary-3: hsl(195, 39%, 52%);
+    --clr-primary-4: hsl(195, 39%, 68%);
+    --clr-primary-5: hsl(195, 39%, 80%);
+    --clr-primary-6: hsl(195, 40%, 96%);
     /* secondary color */
-    --clr-secondary-1: hsl(209, 61%, 16%);
-    --clr-secondary-2: hsl(209, 34%, 30%);
-    --clr-secondary-3: hsl(209, 28%, 39%);
-    --clr-secondary-4: hsl(210, 22%, 49%);
-    --clr-secondary-5: hsl(212, 33%, 89%);
-    --clr-secondary-6: hsl(210, 36%, 96%);
+    --clr-secondary-1: hsl(170, 61%, 28%);
+    --clr-secondary-2: hsl(170, 61%, 40%);
+    --clr-secondary-3: hsl(170, 61%, 56%);
+    --clr-secondary-4: hsl(170, 61%, 72%);
+    --clr-secondary-5: hsl(170, 61%, 88%);
+    --clr-secondary-6: hsl(170, 60%, 96%);
     /* extra colors */
+    --clr-info-1: hsl(27, 87%, 67%);
+    --clr-warning-1: hsl(43, 74%, 66%);
+    --clr-danger-1: hsl(12, 76%, 61%);
     --clr-success: hsl(125, 67%, 35%);
-    --clr-danger-1: hsl(360, 67%, 44%);
-    --clr-danger-2: hsl(360, 71%, 66%);
     --clr-white: #fff;
+    --clr-dark: #222;
     /* fonts */
     --ff-primary: 'Roboto', sans-serif;
     --ff-secondary: 'Open Sans', sans-serif;
@@ -44,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: var(--ff-secondary);
     background: var(--clr-white);
-    color: var(--clr-secondary-1);
+    color: var(--clr-dark);
     line-height: 1.5;
     font-size: 0.875rem;
     margin-top: 5rem;
@@ -80,7 +82,7 @@ const GlobalStyle = createGlobalStyle`
   }
   p {
     margin-bottom: 1.25rem;
-    color: var(--clr-secondary-2);
+    color: var(--clr-dark);
   }
   @media screen and (min-width: 800px) {
     h1 {
@@ -108,8 +110,8 @@ const GlobalStyle = createGlobalStyle`
 
   .btn {
     text-transform: uppercase;
-    background: var(--clr-primary-3);
-    color: var(--clr-primary-5);
+    background: var(--clr-secondary-5);
+    color: var(--clr-dark);
     padding: 0.375rem 0.75rem;
     letter-spacing: var(--spacing);
     display: inline-block;
@@ -123,9 +125,10 @@ const GlobalStyle = createGlobalStyle`
     border-radius: var(--radius);
   }
   .btn:hover {
-    color: var(--clr-primary-1);
-    background: var(--clr-primary-4);
+    color: var(--clr-dark);
+    background: var(--clr-secondary-3);
   }
+
   .center-btn {
     display: block;
     width: 12rem;
@@ -133,11 +136,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     margin-top: 3rem;
   }
-  
-  
+
   .section {
     padding: 5rem 0;
   }
+
   .section-center {
     width: 90vw;
     margin: 0 auto;
@@ -153,16 +156,18 @@ const GlobalStyle = createGlobalStyle`
     width: 5rem;
     height: 0.25rem;
     margin-bottom: 1.25rem;
-    background: var(--clr-primary-3);
+    background: var(--clr-info-1);
     margin-left: auto;
     margin-right: auto;
   }
+
   .section-title {
     margin-bottom: 4rem;
     text-align: center;
   }
-  .bg-grey {
-    background: var(--clr-secondary-6);
+
+  .bg-primary {
+    background: var(--clr-primary-6);
   }
 
   /* pages */

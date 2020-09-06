@@ -5,7 +5,7 @@ import SocialLinks from './socialLinks';
 
 const FooterWrapper = styled.footer`
   height: 9rem;
-  background: #222;
+  background: var(--clr-dark);
   text-align: center;
   display: grid;
   place-items: center;
@@ -14,10 +14,9 @@ const FooterWrapper = styled.footer`
     margin-top: 0.5rem;
     color: var(--clr-white);
     font-weight: normal;
-    text-transform: uppercase;
 
     span {
-      color: var(--clr-primary-3);
+      color: var(--clr-info-1);
     }
   }
 

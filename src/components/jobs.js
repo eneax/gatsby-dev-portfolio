@@ -31,6 +31,7 @@ const JobsSection = styled.section`
     cursor: pointer;
     padding: 0.25rem 0;
     line-height: 1;
+    outline: none;
 
     &:hover {
       color: var(--clr-primary-3);
@@ -77,7 +78,7 @@ const JobInfo = styled.div`
 
   h4 {
     text-transform: uppercase;
-    color: var(--clr-secondary-4);
+    color: var(--clr-black);
     background: var(--clr-secondary-5);
     display: inline-block;
     padding: 0.375rem 0.75rem;

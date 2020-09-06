@@ -50,7 +50,7 @@ const NavWrapper = styled.nav`
 
       a {
         text-transform: capitalize;
-        color: var(--clr-secondary-1);
+        color: var(--clr-dark);
         font-weight: bold;
         letter-spacing: var(--spacing);
         transition: var(--transition);
@@ -75,12 +75,12 @@ const ToggleBtn = styled.button`
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-3);
+  color: var(--clr-dark);
   cursor: pointer;
   transition: var(--transition);
 
   &:hover {
-    color: var(--clr-primary-2);
+    color: var(--clr-primary-3);
   }
 
   @media screen and (min-width: 768px) {

@@ -23,7 +23,7 @@ const HeaderHero = styled.header`
     background: var(--clr-primary-6);
 
     h4 {
-      color: var(--clr-secondary-4);
+      color: var(--clr-dark);
     }
   }
 

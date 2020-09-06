@@ -22,10 +22,9 @@ const BlogTemplateSection = styled.section`
 
     li {
       background: var(--clr-secondary-5);
-      color: var(--clr-secondary-4);
+      color: var(--clr-dark);
       padding: 0.5rem 1rem;
       margin: 1rem 0;
-      text-transform: uppercase;
     }
   }
 
@@ -38,8 +37,8 @@ const BlogTemplateSection = styled.section`
     margin: 2rem 0;
   }
   pre {
-    background: #222;
-    color: yellow;
+    background: var(--clr-dark);
+    color: var(--clr-info-1);
     overflow-x: scroll;
     padding: 1rem 1.5rem;
     border-radius: var(--radius);

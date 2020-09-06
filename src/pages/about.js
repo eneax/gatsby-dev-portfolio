@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
@@ -87,7 +86,7 @@ const AboutSection = styled.section`
 `;
 
 // query
-export const getAboutData = graphql`
+const getAboutData = graphql`
   {
     about: allStrapiAbout {
       nodes {
@@ -109,10 +108,11 @@ export const getAboutData = graphql`
   }
 `;
 
-const About = ({ data }) => {
+const About = () => {
+  const response = useStaticQuery(getAboutData);
   const {
     about: { nodes },
-  } = data;
+  } = response;
   const { info, stack, title, image } = nodes[0];
 
   return (
@@ -135,12 +135,6 @@ const About = ({ data }) => {
       </AboutSection>
     </Layout>
   );
-};
-
-About.propTypes = {
-  data: PropTypes.shape({
-    about: PropTypes.object.isRequired,
-  }).isRequired,
 };
 
 export default About;

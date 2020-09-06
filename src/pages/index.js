@@ -1,6 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -10,7 +9,7 @@ import Jobs from '../components/jobs';
 import Projects from '../components/projects';
 import Blogs from '../components/blogs';
 
-export const getFeaturedProjectsData = graphql`
+const getFeaturedProjectsData = graphql`
   {
     allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {
@@ -53,11 +52,12 @@ export const getFeaturedProjectsData = graphql`
   }
 `;
 
-const HomePage = ({ data }) => {
+const HomePage = () => {
+  const response = useStaticQuery(getFeaturedProjectsData);
   const {
     allStrapiProjects: { nodes: projects },
     allStrapiBlogs: { nodes: blogs },
-  } = data;
+  } = response;
 
   return (
     <Layout>
@@ -70,13 +70,6 @@ const HomePage = ({ data }) => {
       <Blogs title="recent posts" blogs={blogs} showLink />
     </Layout>
   );
-};
-
-HomePage.propTypes = {
-  data: PropTypes.shape({
-    allStrapiProjects: PropTypes.object.isRequired,
-    allStrapiBlogs: PropTypes.object.isRequired,
-  }).isRequired,
 };
 
 export default HomePage;
